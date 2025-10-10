@@ -1,0 +1,423 @@
+body {
+    background-color: #e7ceb1;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+@font-face {
+    font-family: arial rounded;
+    src: url();
+}
+
+@font-face {
+    font-family: 'blobby';
+    src: url('Fonts/CuteFont-Final.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'blobbish';
+    src: url('Fonts/Blobbish-Regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'agl';
+    src: url('Fonts/fonnts.com-Akzidenz_Grotesk_Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'agil';
+    src: url('Fonts/fonnts.com-Akzidenz_Grotesk_Light_Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ag';
+    src: url('Fonts/fonnts.com-Akzidenz_Grotesk_Roman.woff') format('woff');
+}
+
+div.bgimage {
+    background:#e7ceb1 url(baby\ blur.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50%;
+    height: 500px;
+    border-radius: 10%;
+}
+
+div.bgimage img {
+    width: 50%;
+    height: fit-content;
+    object-fit: contain;
+}
+
+
+div.margin20 {
+    margin-left: 20px;
+}
+
+div.cutetalk {
+    font-size: 25px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    line-height: 20px;
+    color: azure;
+}
+
+div.numbers {
+    font-size: 70px;
+    font-family: "arial-rounded-mt-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+    color: azure;
+}
+
+div.title {
+    font-size: 90px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+}
+
+div.titlecenter {
+    width: 100%;
+    height: auto;
+    font-size: 50px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+   line-height: 40px;
+   color: azure;
+
+   
+}
+
+div.circletext {
+    font-size: 110px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    color: azure;
+}
+
+div.smallcircletext {
+    font-size: 70px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    color: azure;
+    line-height: 50px;
+}
+
+div.body {
+    font-size: 18px;
+    font-family: 'ag';
+    color: azure;
+}
+
+
+div.footnote {
+    font-family: 'ag';
+    font-size: 15px;
+    text-align: center;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: azure;
+}
+
+
+div.swatch {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 1px solid azure;
+}
+
+div.bg-dun {
+    background: #e7ceb1;
+}
+
+div.bg-aqua {
+    background: #5efdcd;
+}
+
+div.bg-flax {
+    background: #f9e78a;
+}
+
+div.bg-pink {
+    background: #f8d8e0;
+}
+
+div.bg-lilac {
+    background: #d6dcf6;
+}
+
+div.bg-azure {
+    background: azure;
+    border: 2px azure solid;
+}
+
+div.dun {
+    color: #e7ceb1;
+}
+
+div.lilac {
+    color: #d6dcf6;
+}
+
+div.aqua {
+    color:#5efdcd
+}
+
+div.flax {
+    color: #f9e78a;
+}
+
+div.pink {
+    color: #f8d8e0;
+}
+
+div.white {
+    color: azure;
+}
+
+div.center {
+  border: azure solid 2px;
+  width: 175px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+div.center1 {
+  width: 175px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+div.smallcircle {
+  border: azure solid 2px;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+div.width1 {
+    width: 12.5%;
+}
+
+div.width2 {
+    width: 25%;
+}
+
+div.width3 {
+    width: 37.5%;
+}
+
+div.width4 {
+    width: 50%;
+    display: flex;
+    flex-shrink: 4;
+    height: auto;
+    justify-content: right;
+    margin-left: 40%;
+}
+
+div.width5 {
+    width: 100%;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: black solid 1px;
+}
+
+div.subheading {
+    display: flex;
+    flex-shrink: 4;
+    height: 80px;
+}
+
+div.padbottom {
+    padding-bottom: 40px;
+}
+
+div.pad10 {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border-radius: 20%;
+}
+
+div.fill img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+div.grow {
+  transition: all 0.5s ease-in-out;
+}
+
+div.grow:hover {
+  transform: scale(2.0);
+}
+
+div.zoom {
+    transition: all 0.5s ease-in-out;
+}
+
+div.zoom:hover {
+    zoom: 150%;
+}
+
+div.container2 {
+    display: flex;
+    flex-shrink: 4;
+    height: auto;
+}
+
+div.width62 {
+
+width: 100%;
+height: 540px;
+
+}
+
+div.textbox {
+    margin-left: 70%;
+    margin-top: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: auto;
+}
+
+div.textbox1 {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: auto;
+}
+
+div.space {
+    width: auto;
+    height: 540px;
+}
+
+div.space2 {
+    width: auto;
+    height: 180px;
+}
+
+div.lilacb {
+    border: #d6dcf6 solid 2px;
+}
+
+div.aquab {
+    border:#5efdcd solid 2px;
+}
+
+div.bigcircle {
+    border: azure solid 2px;
+  width: 100%;
+  height: 750px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+div.container3 {
+    display: flex;
+    flex-shrink: 4;
+    height: auto;
+}
+
+div.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+div.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+div.column1 {
+    float: left;
+    width: 62.5%;
+}
+
+div.column2 {
+    float: right;
+    width: 37.5%;
+}
+
+div.image2 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    align-content: left;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+div.image2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
