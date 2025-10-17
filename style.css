@@ -61,6 +61,16 @@ div.margin20 {
     margin-left: 20px;
 }
 
+div.blobbish {
+    font-size: 110px;
+    font-family: 'blobbish';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    color: azure;
+}
+
 div.cutetalk {
     font-size: 25px;
     font-family: 'blobby';
@@ -89,10 +99,25 @@ div.title {
 }
 
 div.titlecenter {
-    width: 100%;
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+   line-height: 35px;
+   color: azure;
+
+   
+}
+
+div.blobbishq {
+    width: auto;
     height: auto;
     font-size: 50px;
-    font-family: 'blobby';
+    font-family: 'blobbish';
     text-transform: uppercase;
     text-align: center;
     margin: auto;
@@ -125,10 +150,12 @@ div.smallcircletext {
 }
 
 div.body {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'ag';
     color: azure;
+    hyphens: auto;
 }
+
 
 
 div.footnote {
@@ -196,6 +223,8 @@ div.pink {
     color: #f8d8e0;
 }
 
+
+
 div.white {
     color: azure;
 }
@@ -209,6 +238,12 @@ div.center {
   align-items: center;
   text-align: center;
 }
+
+div.pinkb {
+    border: 2px solid #f8d8e0;
+}
+
+
 
 div.center1 {
   width: 175px;
@@ -281,17 +316,17 @@ div.pad10 {
 div.fill {
     display: flex;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
     width: 100%;
     height: 500px;
-    border-radius: 20%;
+    
 }
 
 div.fill img {
     width: auto;
     height: auto;
     object-fit: contain;
+    border-radius: 80px;
 }
 
 div.grow {
@@ -299,11 +334,11 @@ div.grow {
 }
 
 div.grow:hover {
-  transform: scale(2.0);
+  transform: scale(1.5);
 }
 
 div.zoom {
-    transition: all 0.5s ease-in-out;
+    transition: all 1.0s ease-in-out;
 }
 
 div.zoom:hover {
@@ -325,7 +360,6 @@ height: 540px;
 
 div.textbox {
     margin-left: 70%;
-    margin-top: 490px;
     display: flex;
     flex-wrap: wrap;
     width: 400px;
@@ -338,7 +372,10 @@ div.textbox1 {
     flex-wrap: wrap;
     width: 400px;
     height: auto;
+    
 }
+
+
 
 div.space {
     width: auto;
@@ -350,13 +387,24 @@ div.space2 {
     height: 180px;
 }
 
+div.flaxb {
+    border: #f9e78a solid 2px;
+}
+
 div.lilacb {
     border: #d6dcf6 solid 2px;
 }
 
+
+
 div.aquab {
     border:#5efdcd solid 2px;
 }
+
+div.aquab2 {
+    border:#5efdcd solid 20px;
+}
+
 
 div.bigcircle {
     border: azure solid 2px;
@@ -398,8 +446,8 @@ div.column1 {
 }
 
 div.column2 {
-    float: right;
     width: 37.5%;
+    overflow: hidden;
 }
 
 div.image2 {
@@ -419,5 +467,71 @@ div.image2 img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+div.sticky {
+    position: sticky;
+    top: 10px;
+}
+
+div.box {
+    height: 581px;
+    width: auto;
+}
+
+
+div.quotebox {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: auto;
+}
+
+div.height {
+    height: 250px;
+}
+
+div.height2 {
+    height: 200px;
+}
+
+div.blur {
+    filter: blur(30px);
+}
+
+div.blur1 {
+    filter: blur(3.5px);
+}
+
+div.blurh {
+    transition: filter 0.5s ease-in-out;
+}
+
+div.blurh:hover {
+    filter: blur(50px);
+}
+
+div.unblur {
+    transition: filter 0.5s ease-in-out;
+}
+
+div.unblur:hover {
+    filter: blur(0);
+}
+
+
+div.blurtxt {
+    transition: filter 0.5s ease-in-out;
+}
+
+div.blurtxt:hover {
+    filter: blur(8px);
+}
+
+div.dunb {
+    border: #e7ceb1 solid 2px;
 }
 
