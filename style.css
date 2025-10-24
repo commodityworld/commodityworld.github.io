@@ -9,8 +9,10 @@ body {
 
 
 
+
+
 @font-face {
-    font-family: arial rounded;
+    font-family: 'aktiv-grotesk';
     src: url();
 }
 
@@ -42,8 +44,15 @@ body {
 
 div.cover {
   background-color: #e7ceb1;
-  height:100vh;
-  
+  height:90vh;  
+}
+
+
+
+div.cover200vh {
+  background-color: #f8d8e0;
+  height:200vh;  
+ 
 }
 
 div.bgimage {
@@ -68,6 +77,8 @@ div.margin20 {
     margin-left: 20px;
 }
 
+
+
 div.blobbish {
     font-size: 110px;
     font-family: 'blobbish';
@@ -76,6 +87,17 @@ div.blobbish {
     margin: auto;
     padding-top: 20px;
     color: azure;
+    line-height: 90px;
+}
+
+div.blobby {
+    font-size: 110px;
+    font-family: 'blobby';
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    line-height: 90px;
 }
 
 div.cutetalk {
@@ -108,13 +130,13 @@ div.title {
 div.titlecenter {
     width: auto;
     height: auto;
-    font-size: 40px;
-    font-family: 'blobby';
+    font-size: 50px;
+    font-family: 'blobby', arial rounded;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     margin: auto;
     margin-bottom: 30px;
-   line-height: 35px;
+   line-height: 40px;
    color: azure;
 
    
@@ -156,11 +178,17 @@ div.smallcircletext {
     line-height: 50px;
 }
 
+
+
 div.body {
-    font-size: 20px;
-    font-family: 'ag';
+    font-size: 22px;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: azure;
     hyphens: auto;
+    hyphenate-limit-chars: 8 3 4;
+    line-height: 22px;
 }
 
 
@@ -168,11 +196,9 @@ div.body {
 div.footnote {
     font-family: 'ag';
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     width: 250px;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
     color: azure;
 }
 
@@ -244,21 +270,35 @@ div.center {
   display: flex;
   align-items: center;
   text-align: center;
+  transition: all 0.6s ease-out;
 }
 
-div.pinkb {
-    border: 2px solid #f8d8e0;
-}
+
+
 
 
 
 div.center1 {
+  border: azure solid 2px;
   width: 175px;
   height: 180px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+div.centerblur {
+  border: #5efdcd solid 2px;
+  width: 175px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: all 0.6s ease-out;
+  
+  position: fixed;
 }
 
 div.smallcircle {
@@ -269,9 +309,61 @@ div.smallcircle {
   display: flex;
   align-items: center;
   text-align: center;
+  transition: all 0.6s ease-out;
 }
 
+div.smallcircle1 {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
+div.smallercircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+div.tinycircle {
+    width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+
+div.tinyspace {
+    height: 5px;
+    width: auto;
+}
+
+div.mlauto {
+    margin-left: auto;
+}
+
+div.alignbottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+div.alignleft {
+    margin-left: 0px;
+}
+
+div.pos-relative {
+    position: relative;
+}
+div.pinkb {
+    border: 2px solid #f8d8e0;
+}
 
 div.width1 {
     width: 12.5%;
@@ -279,6 +371,16 @@ div.width1 {
 
 div.width2 {
     width: 25%;
+}
+
+div.width75 {
+    width: 74%;
+    
+    
+}
+
+div.width90 {
+    width: 80%;
 }
 
 div.width3 {
@@ -297,6 +399,7 @@ div.width4 {
 div.width5 {
     width: 100%;
     height: auto;
+    display: flex;
 }
 
 div.container {
@@ -306,7 +409,7 @@ div.container {
 
 div.subheading {
     display: flex;
-    flex-shrink: 4;
+   
     height: 80px;
 }
 
@@ -354,8 +457,20 @@ div.zoom:hover {
 
 div.container2 {
     display: flex;
-    flex-shrink: 4;
+   flex-shrink: 4;
     height: auto;
+    
+}
+
+
+
+div.container3 {
+    position: relative;
+    display: flex;
+
+    height: auto;
+
+    
 }
 
 div.width62 {
@@ -374,11 +489,17 @@ div.textbox {
     
 }
 
-div.textbox1 {
-    margin-left: 100px;
+div.wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+}
+
+div.textbox1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
     height: auto;
     
 }
@@ -388,6 +509,25 @@ div.textbox1 {
 div.space {
     width: auto;
     height: 540px;
+}
+
+div.autobt {
+    margin-top: 100%;
+    margin-bottom: 100%;
+  
+}
+
+div.quotemargin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.height300 {
+    height: 450px;
+}
+
+div.height500 {
+    height: 620px;
 }
 
 div.space2 {
@@ -449,14 +589,38 @@ div.image img {
 }
 
 div.column1 {
-    float: left;
-    width: 62.5%;
+    
+    width: 60%;
+  
 }
 
 div.column2 {
-    width: 37.5%;
-    overflow: hidden;
+    width: 40%;
+  
 }
+
+div.column3 {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+div.insidecolumn {
+    width: 100%;
+    height: auto;
+   
+   
+}
+
+div.insidecolumn2 {
+    width: 100%;
+    height: auto;
+  
+   
+}
+
+
 
 div.image2 {
     display: flex;
@@ -479,7 +643,31 @@ div.image2 img {
 
 div.sticky {
     position: sticky;
+    top: 0px; 
+}
+
+div.top5 {
     top: 5px;
+}
+
+div.top189 {
+    top:189px
+}
+
+div.top373 {
+    top: 373px;
+}
+
+div.top557 {
+    top: 557px;
+}
+
+div.top741 {
+    top: 741px;
+}
+
+div.top30 {
+    margin-top: 55px;
 }
 
 div.box {
@@ -488,14 +676,15 @@ div.box {
 }
 
 div.subtitle {
-    width: 60%;
+    
     height: auto;
-    font-size: 20px;
-    font-family: 'ag';
+    font-size: 18px;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    hyphens: none;
     color: azure;
-    hyphens: auto;
     padding-bottom: 15px;
-    margin-left: -80px;
+    line-height: 18px;
 }
 
 div.quotebox {
@@ -506,6 +695,7 @@ div.quotebox {
     flex-wrap: wrap;
     width: 500px;
     height: auto;
+    
 }
 
 div.height {
@@ -532,14 +722,18 @@ div.blurh:hover {
     filter: blur(50px);
 }
 
+div.blurh:hover {
+    filter: blur(50px);
+}
+
+
 div.unblur {
     transition: filter 0.5s ease-in-out;
 }
 
 div.unblur:hover {
-    filter: blur(0);
+    filter: blur(0px);
 }
-
 
 div.blurtxt {
     transition: filter 0.5s ease-in-out;
@@ -553,3 +747,211 @@ div.dunb {
     border: #e7ceb1 solid 2px;
 }
 
+div.bluranimate {
+    animation: blur-in-out 3.5s infinite alternate;
+
+}
+
+   div.center:hover {
+    width: 280px;
+   }
+
+
+
+
+
+@keyframes blur-in-out  {
+
+0% {
+    filter: blur(1px); 
+  }
+
+  50% {
+    filter: blur(15px); 
+  }
+  100% {
+    filter: blur(1px); 
+  }
+}
+
+
+div.bluranimate2 {
+    animation: blur-in-out2 5s infinite alternate;
+
+}
+
+
+
+
+@keyframes blur-in-out2  {
+
+0% {
+    filter: blur(3px); 
+  }
+
+  50% {
+    filter: blur(50px); 
+  }
+  100% {
+    filter: blur(3px); 
+  }
+}
+
+
+div.widen {
+    animation: widen 7s infinite;
+}
+
+
+
+
+   @keyframes widen {
+
+    0% {
+        width: 150px;
+    }
+
+    50% {
+        width: 250px;
+    }
+
+    100% {
+        width: 150px;
+    }
+
+   }
+
+
+   div.widen2 {
+    animation: widen 2.5s infinite;
+}
+
+
+
+
+
+
+
+ 
+
+
+     .center:nth-child(1) {
+    animation-delay: 0s;
+   }
+
+   .center:nth-child(2) {
+    animation-delay: 1s;
+   }
+
+    .center:nth-child(3) {
+    animation-delay: 2s;
+   }
+
+    .center:nth-child(4) {
+    animation-delay: 3s;
+   }
+
+    .center:nth-child(5) {
+    animation-delay: 4s;
+   }
+    .center:nth-child(6) {
+    animation-delay: 5s;
+   }
+
+   .center:nth-child(7) {
+    animation-delay: 6s;
+   }
+
+    .center:nth-child(8) {
+    animation-delay: 7s;
+   }
+
+    .center:nth-child(9) {
+    animation-delay: 8s;
+   }
+
+    .center:nth-child(10) {
+    animation-delay: 9s;
+   }
+
+
+
+div.row1 {
+    position: sticky;
+    top: 100px;
+}
+
+div.row2 {
+    position: sticky;
+    top: 181px;
+}
+
+div.row3 {
+    position: sticky;
+    top: 262px;
+}
+
+div.row4 {
+    position: sticky;
+    top: 343px;
+}
+
+div.row5 {
+    position: sticky;
+    top: 424px;
+}
+
+div.row6 {
+    position: sticky;
+    top: 505px;
+}
+
+
+div.fixed {
+    position: absolute;
+}
+
+div.blurfilter {
+    backdrop-filter: blur(10px);
+}
+
+div.bigquote {
+     margin-left: auto;
+    margin-right: auto;
+   text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: auto;
+   
+}
+
+span.blobby {
+    font-family: 'blobby';
+}
+span.blob {
+    font-family: 'blobbish';
+}
+
+span.lilac {
+    color: #d6dcf6;
+}
+
+span.italic {
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: italic; 
+    hyphens: none;
+    
+}
+
+span.rounded {
+    font-family: "arial-rounded-mt-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+div.lineheight {
+    line-height: 12px;
+}
