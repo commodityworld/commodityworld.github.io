@@ -335,6 +335,7 @@ div.center1 {
 }
 
 div.center3 {
+    border: #e7ceb1 solid 1px;
   width: 175px;
   height: 180px;
   border-radius: 50%;
